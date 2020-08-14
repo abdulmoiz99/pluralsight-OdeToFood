@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OdeToFood.Data
+namespace OdeToFood.Data.Model
 {
-    public class Class1
+    public enum CuisineType
     {
+        None,
+        Italian,
+        Pakistani,
+        French
     }
 }
