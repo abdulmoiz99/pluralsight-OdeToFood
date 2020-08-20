@@ -10,13 +10,7 @@ namespace OdeToFood.Data.Services
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetAll();
-
-        public class InMemoryRestaurantData : IRestaurantData
-        {
-            public IEnumerable<Restaurant> GetAll()
-            {
-                throw new NotImplementedException();
-            }
-        }
+        Restaurant Get(int id);
+      
     }
 }
