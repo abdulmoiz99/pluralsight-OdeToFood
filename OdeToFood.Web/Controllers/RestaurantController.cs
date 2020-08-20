@@ -16,8 +16,6 @@ namespace OdeToFood.Web.Controllers
         {
             this.db = db;
         }
-
-
         // GET: Restaurant
         [HttpGet]
         public ActionResult Index()
@@ -45,7 +43,16 @@ namespace OdeToFood.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Restaurant restaurant)
         {
-            db.Add(restaurant);
+            if (String.IsNullOrEmpty(restaurant.Name))
+            {
+                ModelState.AddModelError(nameof(restaurant.Name), "The name is required");
+
+            }
+            if (ModelState.IsValid)
+            {
+                db.Add(restaurant);
+                return View();
+            }
             return View();
         }
     }
