@@ -203,6 +203,7 @@
     <Content Include="Views\Restaurant\Details.cshtml" />
     <Content Include="Views\Restaurant\NotFound.cshtml" />
     <Content Include="Views\Restaurant\Create.cshtml" />
+    <Content Include="Views\Restaurant\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,7 +245,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1197</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1197/</IISUrl>
+          <IISUrl>http://localhost:1198/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
